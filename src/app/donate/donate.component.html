@@ -1,0 +1,55 @@
+<mz-parallax [height]="450">
+  <img src="../assets/whitebg.png">
+</mz-parallax>
+
+<section style="padding: 2%;">
+  <div class="container" style="margin-top: 2%;">
+    <img src="../assets/icon_1.png" [height]="55">
+    <img src="../assets/icon_2.png" [height]="55" style="float: right;">
+    <div class="row">
+      <div class="col s12">
+        <mz-input-container>
+          <input mz-input
+            [label] = "'Sending Wallet Address'"
+            placeholder="Enter Address"
+          >
+        </mz-input-container>
+      </div>
+      <div class="col s12">
+        <mz-input-container>
+          <input mz-input
+            [label] = "'Receiving Wallet Address'"
+            placeholder="Enter Address"
+          >
+        </mz-input-container>
+      </div>
+      <div class="col s12">
+        <mz-input-container>
+          <input mz-input
+            [label] = "'Transfer Amount'"
+            placeholder="Enter Amount"
+          >
+        </mz-input-container>
+      </div>
+      <div class="col s12">
+        <div class="row center">
+          <div class="col s12">
+            <button mz-button (click)="bottomSheetModal.openModal()">Send</button>
+            <mz-modal #bottomSheetModal [fullscreen]="false" [options]="modalOptions">
+              <mz-modal-header>
+                <h4>Transaction Completed!</h4>
+              </mz-modal-header>
+              <mz-modal-content>
+                Thank you for your contribution, we appreciate your selflessness and
+                hope you come back to donate soon!
+              </mz-modal-content>
+              <mz-modal-footer>
+                <button mz-button mz-modal-close>Close</button>
+              </mz-modal-footer>
+            </mz-modal>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,108 @@
+<mz-parallax [height]="450">
+  <img src="../assets/blackbg.png">
+</mz-parallax>
+
+<table class="centered">
+  <thead>
+    <tr>
+      <th>Donors</th>
+      <th>Impact Eco Points</th>
+      <th>Social Cause</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Alvin</td>
+      <td>25.00</td>
+      <td><b>Ocean Cleanup</b></td>
+    </tr>
+    <tr>
+      <td>Alan</td>
+      <td>37.00</td>
+      <td><b>US Food Relief</b></td>
+    </tr>
+    <tr>
+      <td>Jonathan</td>
+      <td>2.00</td>
+      <td><b>Forrest Cleanup</b></td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>22.00</td>
+      <td><b>Canadian Blood Service</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<section>
+  <div class="row center">
+    <h4>List of Charities</h4>
+    <div class="col s12 l6 text-align-left">
+      <h5>4Ocean</h5>
+      <p class="left-align">
+        4ocean is a United States for profit company that sells bracelets made from recycled materials,
+        as well as apparel and water bottles. The company uses a portion of the profits to remove one
+        pound of trash from the ocean and coastlines for each bracelet that is sold in an effort to
+        clean up plastic pollution in oceans.
+      </p>
+    </div>
+    <div class="col s12 l6">
+      <h5>World Vision</h5>
+      <p class="left-align">
+        World Vision International is an Evangelical Christian humanitarian aid, development, and advocacy organization. It prefers to present itself as interdenominational and also employs staff from non-evangelical Christian denominations. It was founded in 1950 by Robert Pierce as a service organization to meet the emergency needs of missionaries. In 1975 development work was added to World Vision's objectives. It is active in nearly 100 countries with a total revenue including grants, product and foreign donations of more than $2 billion (2017).
+      </p>
+    </div>
+    <div class="col s12 l6">
+      <h5>Unicef</h5>
+      <p class="left-align">
+        The United Nations Children's Fund, originally known as the United Nations International Children's Emergency Fund, was created by the United Nations General Assembly on 11 December 1946, to provide emergency food and healthcare to children and mothers in countries that had been devastated by World War II.
+      </p>
+    </div>
+    <div class="col s12 l6">
+      <h5>Safe the Children</h5>
+      <p class="left-align">
+        Our mission is to help the most marginalized and hard-to-reach children around the world. For 100 years, we have often been the first on the ground to respond to the needs of children in crisis, and the last to leave. Our innovative and collaborative programs tackle some of the world’s most pressing issues for children.
+        We are doing whatever it takes to give children a voice and advocate for their rights as set out by the UN Convention on the Rights of the Child. We won’t stop until every last child survives and thrives.
+      </p>
+    </div>
+    <div class="col s12 l6">
+      <h5>Doctors Without Borders</h5>
+      <p class="left-align">
+        Médecins Sans Frontières, sometimes rendered in English as Doctors Without Borders,
+        is an international humanitarian medical non-governmental organisation of French origin
+        best known for its projects in conflict zones and in countries affected by endemic diseases
+      </p>
+    </div>
+    <div class="col s12 l6">
+      <h5>UNESCO</h5>
+      <p class="left-align">
+        UNESCO is the United Nations Educational, Scientific and Cultural Organization. It seeks to build peace through international cooperation in Education, the Sciences and Culture. UNESCO's programmes contribute to the achievement of the Sustainable Development Goals defined in Agenda 2030, adopted by the UN General Assembly in 2015.
+      </p>
+    </div>
+    <button mz-button (click)="bottomSheetModal.openModal()">How to Donate</button>
+    <mz-modal #bottomSheetModal [fullscreen]="false" [options]="modalOptions">
+      <mz-modal-header>
+        <h4>Steps</h4>
+      </mz-modal-header>
+      <mz-modal-content>
+        <ul>
+          <li>Step 1: Allocate the number of Eco-Points you wish to donate </li>
+          <li>Step 2: Enter the receiving address for each charity</li>
+          <li>Step 3: Enter your wallet address</li>
+          <li>Step 4: Click Send!</li>
+        </ul>
+        <h5>How does it work?</h5>
+        <p>
+          Thanks to OpenLaw.io we are able to transfer funds without you needing to
+          login into your metamask account.
+        </p>
+      </mz-modal-content>
+      <mz-modal-footer>
+        <button mz-button mz-modal-close>Got it!</button>
+      </mz-modal-footer>
+    </mz-modal>
+    <a routerLink="donate" style="margin-left: 20px;"class="waves-effect waves-light btn">Donate</a>
+  </div>
+
+</section>
