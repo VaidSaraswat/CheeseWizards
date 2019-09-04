@@ -14,8 +14,6 @@ import { MzParallaxModule } from 'ngx-materialize';
 import { MzModalModule } from 'ngx-materialize';
 import { MzInputModule } from 'ngx-materialize';
 import { MzSidenavModule } from 'ngx-materialize';
-// import both modules
-import { APIClient, Openlaw } from "openlaw";
 
 
 
@@ -38,8 +36,6 @@ import { APIClient, Openlaw } from "openlaw";
     MzModalModule,
     MzInputModule,
     MzSidenavModule,
-    APIClient,
-    Openlaw
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Api2Service } from '../api2.service';
 
 
 @Component({
@@ -9,10 +8,9 @@ import { Api2Service } from '../api2.service';
 })
 export class DonateComponent implements OnInit {
 
-  constructor(private api2service: Api2Service) { }
+  constructor() { }
 
   ngOnInit() {
-    this.api2service.getTemplate();
   }
 
 }
